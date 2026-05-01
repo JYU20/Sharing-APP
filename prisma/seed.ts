@@ -8,7 +8,7 @@ async function main() {
 	const bcryptedPassword = await bcrypt.hash("password", 10);
 	const images = [...Array(16)]
 		.map((_, i) => i + 1)
-		.map((i) => `/dogs/dog_${i}.jpg`);
+		.map((i) => `/dogs/dog_${i}.JPEG`);
 	const users = [...Array(10)]
 		.map((_, i) => i + 1)
 		.map((i) => {
